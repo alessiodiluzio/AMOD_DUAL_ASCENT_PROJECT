@@ -14,7 +14,7 @@
     2. Istanze di test metriche per UFL
  
  
-#####Codice sorgente
+##### Codice sorgente
  
  Per eseguire il progetto è necessaria l'installazione di una release di Python 3.
  Occorre inoltre installare i packages amplpy (API AMPL per Python) e prettytable (libreria usata per il rendering dei risultati dei test in forma tabulare ).
@@ -36,7 +36,7 @@ Un menù interattivo guiderà nella scelta dell’operazione da eseguire, in par
 *  Se mostrare i singoli step di esecuzione degli algoritmi.
 *  Se calcolare anche la soluzione primale relativa alle esecuzioni di DUALOC e Algoritmo Primale-Duale per l’UFL.
 
-#####Risultati dei test
+##### Risultati dei test
 
 I risultati dei test sono reperibili nella cartella exam_material/test_results.
 Si fa riferimento all'algoritmo DUALOC come definito in [1] pp. 303-305,all'algoritmo di Ascesa Duale semplice come definito in [1] p. 297 e all'algoritmo Primale - Duale come definito in [2] p. 7.
@@ -61,18 +61,18 @@ Si fa riferimento all'algoritmo DUALOC come definito in [1] pp. 303-305,all'algo
     9. _ufl_solution_comparison.jpg_ grafico di confronto tra le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero) e dell'algoritmo DUALOC (linea BLU) su istanze di test per UFL.
     10. _ufl_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero)  e dell'algoritmo DUALOC (linea BLU) su istanze di test per UFL.
     
-#####Materiale per la consegna
+##### Materiale per la consegna
 
 Nella cartella exam_material sono presenti una relazione in formato .pdf nella cartella report e le slide di presentazione in formato .pdf nella cartella slides.
 
 
-#####Istanze di test
+##### Istanze di test
 
 1. Istanze di test per UFL/SSCFL sono nella cartella test_instances ,nel nome del file il primo numero rappresenta il numero di clienti dell'istanza,il secondo il numero di facility.
 2. Istanze di test metriche per UFL , sono state ottenuto modificando le istanze di test per UFL/SSCFL.Si trovano nella cartella metric_instances, il nome del file segue la stessa regola di cui al punto 1.
 
 
-######Riferimenti
+###### Riferimenti
 
 1.  A. Sassano, Modelli e algoritmi della ricerca operativa, FrancoAngeli, 1999, Milano, pp. 267 – 308.
 2.  A. Gupta,V. Gupta , “Lecture 5: Primal-Dual Algorithms and Facility.Location”, 2008, pp. 1 - 7.
