@@ -1,0 +1,7 @@
+*.dat
+*.mod
+*.txt
+.idea
+/ampl_mod_files/
+/test_instances/
+/prove/
