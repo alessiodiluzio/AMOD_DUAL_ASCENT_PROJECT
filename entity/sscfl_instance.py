@@ -1,4 +1,4 @@
-# Rappresenta un'istanza di test per un problema di SSCFL
+# Rappresenta un'istanza di ufl_instance_generator per un problema di SSCFL
 class SscflInstance(object):
 
     def __init__(self, transporting_cost, opening_cost, demand, capacity):

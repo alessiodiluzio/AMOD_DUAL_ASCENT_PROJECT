@@ -14,10 +14,10 @@ def get_list_all_files_name(dir_path):
     return all_files_path
 
 
-# Stampa su file .txt una tabella con i risultati di test di una esecuzione
+# Stampa su file .txt una tabella con i risultati di ufl_instance_generator di una esecuzione
 # filename : file di output
 # field : nomi delle colonne della tabella
-# results : risultati di test
+# results : risultati di ufl_instance_generator
 def print_table_to_file(filename, field, results):
     table = PrettyTable()
     table.field_names = field
@@ -47,12 +47,12 @@ def complete_path_name(dir_path):
         raise SystemExit("Invalid Path")
 
 
-# Stampa su file .csv una  i risultati di test di una esecuzione
+# Stampa su file .csv una  i risultati di ufl_instance_generator di una esecuzione
 # filename : file di output
 # field : nomi dei campi del file
-# results : risultati di test
+# results : risultati di ufl_instance_generator
 def write_csv_file(filename, fields, lines):
-    with open(filename, mode='w') as csv_file:
+    with open(filename, 'w') as csv_file:
         csv_writer = csv.writer(csv_file)
         csv_writer.writerow(fields)
         csv_writer.writerows(lines)

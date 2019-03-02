@@ -133,7 +133,6 @@ def compute_primal_solution(z, ufl_instance):
                     u_final_set.append(j)
                     z_value += ufl_instance.get_opening_cost()[j]
                 z_value += ufl_instance.get_transporting_cost()[i][j]
-    print("Z = ", z_value)
     # Viene restituito il valore della soluzione primale tenendo conto delle facility definitivamente aperte
     # e delle scelte di connessione rappresentate dalla matrice Y
     return z_value

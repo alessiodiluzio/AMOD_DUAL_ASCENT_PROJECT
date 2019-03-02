@@ -19,8 +19,8 @@ from util.parsing_instance_file import parse_test_instance_file_ufl, parse_test_
 def ufl(filename, primal, output, ampl_folder):
     try:
         ufl_instance = parse_test_instance_file_ufl(filename)
-    except Exception:
-        raise SystemExit("Error reading file")
+    except Exception as e:
+        raise SystemExit(e)
     time_profile = []
     start = time.time()
     optimal_pli = solve_ufl_instance('UFL.mod', ufl_instance, ampl_folder)
@@ -185,7 +185,7 @@ def compute_ufl(dir_path, primal, output, results, single_file, ampl_folder):
         computed += 1
     if results is not None:
         write_csv_file(results+'ufl_results.csv', field, table)
-        print_table_to_file(results+'ufl_results.txt', field, table)
+        print_table_to_file(results+'primal_ufl_results.txt', field, table)
 
 
 # Calcola la soluzione di molteplici istanze di UFL metrico
@@ -218,7 +218,7 @@ def compute_metric_ufl(dir_path, primal, output, results, single_file, ampl_fold
         computed += 1
     if results is not None:
         write_csv_file(results + 'metric_ufl_results.csv', field, table)
-        print_table_to_file(results+'metric_ufl_results.txt', field, table)
+        print_table_to_file(results+'primal_metric_ufl_results.txt', field, table)
 
 
 # Calcola la soluzione di molteplici istanze di UFL comprando l'esecuzione di DUALOC
@@ -249,6 +249,5 @@ def compute_comparison_simple_erlenkotter_dualoc(dir_path, output, results, sing
     if results is not None:
         write_csv_file(results+'ufl_simple_dualoc_results.csv', field, table)
         print_table_to_file(results+'ufl_simple_dualoc_results.txt', field, table)
-
 
 

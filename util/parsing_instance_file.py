@@ -2,7 +2,7 @@ from entity.sscfl_instance import SscflInstance
 from entity.ufl_instance import UflInstance
 
 
-# Parsing del file di una istanza d test di SSCFL in un oggetto sscfl_instance
+# Parsing del file di una istanza d ufl_instance_generator di SSCFL in un oggetto sscfl_instance
 def parse_test_instance_file_sscfl(file):
     with open(file) as fp:
         lines = fp.readlines()
@@ -29,7 +29,7 @@ def parse_test_instance_file_sscfl(file):
     return SscflInstance(transporting_costs, opening_costs, demand, capacity)
 
 
-# Parsing del file di una istanza d test di UFL in un oggetto ufl_instance
+# Parsing del file di una istanza d ufl_instance_generator di UFL in un oggetto ufl_instance
 def parse_test_instance_file_ufl(file):
     with open(file) as fp:
         lines = fp.readlines()
@@ -41,7 +41,7 @@ def parse_test_instance_file_ufl(file):
         opening_costs += [read_numbers_from_line(i, lines, 2)[1]]
     transporting_costs_tmp = []
     for i in range(3+n_of_facility, 3+2*n_of_facility):
-        transporting_costs_tmp += [read_numbers_from_line(i, lines, n_of_clients)]
+        transporting_costs_tmp.append(read_numbers_from_line(i, lines, n_of_clients))
     transporting_costs = [[0 for i in range(0, n_of_facility)] for j in range(0, n_of_clients)]
     for i in range(0, n_of_facility):
         for j in range(0, n_of_clients):
@@ -52,7 +52,8 @@ def parse_test_instance_file_ufl(file):
 # Legge n interi da una stringa contenuta in una lista
 def read_numbers_from_line(line, lines, n):
     c = lines[line-1]
-    read_values = []
+    read_values = [int(s) for s in c.split() if s.isdigit()]
+    return read_values
     k = 0
     for i in range(0, n):
         tmp = ''
@@ -61,5 +62,6 @@ def read_numbers_from_line(line, lines, n):
         while k < len(c) and c[k] != ' ' and c[k] != '\n':
             tmp += c[k]
             k += 1
-        read_values += [int(float(tmp))]
+        read_values += [int(tmp)]
+        print(c, " ", k)
     return read_values

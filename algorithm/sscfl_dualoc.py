@@ -3,7 +3,7 @@ from algorithm.ufl_dualoc import compute_h_index
 
 
 # DUALOC adattato a istanze di SSCFL
-# sscfl_istanza : oggetto che rappresenta l'istanza di test
+# sscfl_istanza : oggetto che rappresenta l'istanza di ufl_instance_generator
 # output : True se si richiede la stampa dei calcoli dell'algoritmo False altrimenti
 def sscfl_dualoc(sscfl_instance, output):
     completed = [False] * sscfl_instance.get_n_of_client()

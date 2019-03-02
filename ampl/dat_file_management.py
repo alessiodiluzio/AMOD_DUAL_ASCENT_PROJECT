@@ -1,5 +1,6 @@
 from amplpy import DataFrame
 
+
 # Formatta un oggetto sscfl_instance in un oggetto DataFrame per l'esecuzione del solver AMPL
 def write_ampl_sscfl_dat_file(ampl, sscfl_instance):
     facility_set = []

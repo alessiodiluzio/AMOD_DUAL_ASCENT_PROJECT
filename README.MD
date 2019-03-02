@@ -54,12 +54,14 @@ Si fa riferimento all'algoritmo DUALOC come definito in [1] pp. 303-305,all'algo
     2. _solution_comparison_metric_ufl.jpg_ grafico di confronto tra la soluzioni di DUALOC (linea BLU) e algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero).
     3. _sscfl_solution_comparison.jpg_ grafico di confronto tra le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero), e dell'algoritmo DUALOC (linea BLU) adattato su istanze di test per SSCFL.
     4. _sscfl_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero), e dell'algoritmo DUALOC adattato (linea BLU) su istanze di test per SSCFL.
-    5. _time_comparison_metric_ufl.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero) ,dell'algoritmo DUALOC (linea BLU) ,e dell'algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL.
-    6. _time_comparison_simple_dualoc.jpg_ grafico di confronto tra i tempi di esecuzione dell'algoritmo DUALOC (linea BLU) e dell'algoritmo di Ascesa Duale semplice (linea ROSSA) su istanze di test per UFL.
+    5. _ufl_metric_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero) ,dell'algoritmo DUALOC (linea BLU) ,e dell'algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL.
+    6. _ufl_simple_dualoc_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione dell'algoritmo DUALOC (linea BLU) e dell'algoritmo di Ascesa Duale semplice (linea ROSSA) su istanze di test per UFL.
     7. _ufl_primal_solution_comparison.jpg_ grafico di confronto tra la soluzione del PLI UFL individuata dal solver AMPL (linea ROSSA) e la soluzione primale calcolata dal DUALOC (linea BLU).
     8. _ufl_simple_dualoc_solution_comparison.jpg_ grafico di confronto tra le soluzioni dell'algoritmo DUALOC (linea BLU) e dell'algoritmo di Ascesa Duale semplice (linea ROSSA) su istanze di test per UFL.
     9. _ufl_solution_comparison.jpg_ grafico di confronto tra le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero) e dell'algoritmo DUALOC (linea BLU) su istanze di test per UFL.
     10. _ufl_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero)  e dell'algoritmo DUALOC (linea BLU) su istanze di test per UFL.
+    11. _ufl_instance_comparison.jpg_ grafico di confronto tra la soluzione ottima della formulazione intera (rosso) delle istanze di test per UFL e della soluzione rilassata (Giallo).
+    12. _sscfl_instance_comparison.jpg_  grafico di confronto tra la soluzione ottima della formulazione intera (rosso) delle istanze di test per SSCFL e della soluzione rilassata (Giallo).
     
 ##### Materiale per la consegna
 

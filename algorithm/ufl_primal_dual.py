@@ -91,7 +91,7 @@ def primal_dual(ufl_instance, output, primal):
                 print(row)
             print("z = ", int(sum(a[0:len(a)])))
     print("### Primal - Dual SOLUTION ###")
-    print("Dual solution : Z = ", sum(a[0:len(a)]))
+    print("Dual solution : Z = ", float(sum(a[0:len(a)])))
     if primal:
         # Se richiesto viene calcolato il valore della soluzione primale
         primal_value = compute_primal_solution(opened_facility, b, ufl_instance, assigned, tight_arch)
@@ -157,6 +157,7 @@ def compute_primal_solution(opened_facility, b, ufl_instance, assigned, tight_ar
                 if [client, j] in tight_arch:
                     assigned[j].append(client)
                     closed[elem].remove(client)
+                    break
     # i clienti che non hanno alcun arco tight verso le facility rimaste vengono assegnati alle
     # facility responsabili della chiusura della facility a cui erano assegnati
     for elem in closed:
