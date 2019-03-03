@@ -42,26 +42,26 @@ I risultati dei test sono reperibili nella cartella exam_material/test_results.
 Si fa riferimento all'algoritmo DUALOC come definito in [1] pp. 303-305,all'algoritmo di Ascesa Duale semplice come definito in [1] p. 297 e all'algoritmo Primale - Duale come definito in [2] p. 7.
 
 1. Tabelle
-    1. _metric_ufl_results.txt_ riguarda l'esecuzione del solver AMPL, dell'algoritmo DUALOC e dell'algoritmo Primale - Duale su istanze di tipo metrico per UFL.
-    2. _primal_metric_ufl_results.txt_ contiene gli stessi dati di _metric_ufl_results.txt_ e in più il valore della soluzione primale calcolata dall'algoritmo DUALOC e dall'algoritmo Primale - Duale
-    3. _ufl_results.txt_ riguarda l'esecuzione del solver AMPL e dell'algoritmo DUALOC sulle istanze di test per UFL.
-    4. _primal_ufl_results.txt_ contiene gli stessi dati di _ufl_results.txt_ e in più il valore della soluzione primale calcolata dall'algoritmo DUALOC.
-    5. _sscfl_results.txt_ riguarda l'esecuzione del solver AMPL e dell'algoritmo DUALOC adattato sulle istanze di test per SSCFL.
-    6. _ufl_simple_dualoc_results.txt_ riguarda l'esecuzione dell'algoritmo DUALOC e dell'algoritmo di Ascesa Duale semplice sulle istanze di test per UFL.
+    * _metric_ufl_results.txt_ riguarda l'esecuzione del solver AMPL, dell'algoritmo DUALOC e dell'algoritmo Primale - Duale su istanze di tipo metrico per UFL.
+    * _primal_metric_ufl_results.txt_ contiene gli stessi dati di _metric_ufl_results.txt_ e in più il valore della soluzione primale calcolata dall'algoritmo DUALOC e dall'algoritmo Primale - Duale
+    * _ufl_results.txt_ riguarda l'esecuzione del solver AMPL e dell'algoritmo DUALOC sulle istanze di test per UFL.
+    * _primal_ufl_results.txt_ contiene gli stessi dati di _ufl_results.txt_ e in più il valore della soluzione primale calcolata dall'algoritmo DUALOC.
+    * _sscfl_results.txt_ riguarda l'esecuzione del solver AMPL e dell'algoritmo DUALOC adattato sulle istanze di test per SSCFL.
+    * _ufl_simple_dualoc_results.txt_ riguarda l'esecuzione dell'algoritmo DUALOC e dell'algoritmo di Ascesa Duale semplice sulle istanze di test per UFL.
     
 2. Grafici (ottenuti con l'utilizzo del software MATLAB)
-    1. _metric_ufl_primal_solution_comparison.jpg_ grafico di confronto tra la soluzioni primali di DUALOC (linea BLU) e algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL e le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero).
-    2. _solution_comparison_metric_ufl.jpg_ grafico di confronto tra la soluzioni di DUALOC (linea BLU) e algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero).
-    3. _sscfl_solution_comparison.jpg_ grafico di confronto tra le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero), e dell'algoritmo DUALOC (linea BLU) adattato su istanze di test per SSCFL.
-    4. _sscfl_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero), e dell'algoritmo DUALOC adattato (linea BLU) su istanze di test per SSCFL.
-    5. _ufl_metric_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero) ,dell'algoritmo DUALOC (linea BLU) ,e dell'algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL.
-    6. _ufl_simple_dualoc_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione dell'algoritmo DUALOC (linea BLU) e dell'algoritmo di Ascesa Duale semplice (linea ROSSA) su istanze di test per UFL.
-    7. _ufl_primal_solution_comparison.jpg_ grafico di confronto tra la soluzione del PLI UFL individuata dal solver AMPL (linea ROSSA) e la soluzione primale calcolata dal DUALOC (linea BLU).
-    8. _ufl_simple_dualoc_solution_comparison.jpg_ grafico di confronto tra le soluzioni dell'algoritmo DUALOC (linea BLU) e dell'algoritmo di Ascesa Duale semplice (linea ROSSA) su istanze di test per UFL.
-    9. _ufl_solution_comparison.jpg_ grafico di confronto tra le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero) e dell'algoritmo DUALOC (linea BLU) su istanze di test per UFL.
-    10. _ufl_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero)  e dell'algoritmo DUALOC (linea BLU) su istanze di test per UFL.
-    11. _ufl_instance_comparison.jpg_ grafico di confronto tra la soluzione ottima della formulazione intera (rosso) delle istanze di test per UFL e della soluzione rilassata (Giallo).
-    12. _sscfl_instance_comparison.jpg_  grafico di confronto tra la soluzione ottima della formulazione intera (rosso) delle istanze di test per SSCFL e della soluzione rilassata (Giallo).
+    * _metric_ufl_primal_solution_comparison.jpg_ grafico di confronto tra la soluzioni primali di DUALOC (linea BLU) e algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL e le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero).
+    * _solution_comparison_metric_ufl.jpg_ grafico di confronto tra la soluzioni di DUALOC (linea BLU) e algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero).
+    * _sscfl_solution_comparison.jpg_ grafico di confronto tra le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero), e dell'algoritmo DUALOC (linea BLU) adattato su istanze di test per SSCFL.
+    * _sscfl_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero), e dell'algoritmo DUALOC adattato (linea BLU) su istanze di test per SSCFL.
+    * _ufl_metric_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero) ,dell'algoritmo DUALOC (linea BLU) ,e dell'algoritmo Primale - Duale (linea VERDE) su istanze di tipo metrico per UFL.
+    * _ufl_simple_dualoc_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione dell'algoritmo DUALOC (linea BLU) e dell'algoritmo di Ascesa Duale semplice (linea ROSSA) su istanze di test per UFL.
+    * _ufl_primal_solution_comparison.jpg_ grafico di confronto tra la soluzione del PLI UFL individuata dal solver AMPL (linea ROSSA) e la soluzione primale calcolata dal DUALOC (linea BLU).
+    * _ufl_simple_dualoc_solution_comparison.jpg_ grafico di confronto tra le soluzioni dell'algoritmo DUALOC (linea BLU) e dell'algoritmo di Ascesa Duale semplice (linea ROSSA) su istanze di test per UFL.
+    * _ufl_solution_comparison.jpg_ grafico di confronto tra le soluzioni del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero) e dell'algoritmo DUALOC (linea BLU) su istanze di test per UFL.
+    * _ufl_time_comparison.jpg_ grafico di confronto tra i tempi di esecuzione del solver AMPL (linea GIALLA per il rilassamento e ROSSA per il PL intero)  e dell'algoritmo DUALOC (linea BLU) su istanze di test per UFL.
+    * _ufl_instance_comparison.jpg_ grafico di confronto tra la soluzione ottima della formulazione intera (rosso) delle istanze di test per UFL e della soluzione rilassata (Giallo).
+    * _sscfl_instance_comparison.jpg_  grafico di confronto tra la soluzione ottima della formulazione intera (rosso) delle istanze di test per SSCFL e della soluzione rilassata (Giallo).
     
 ##### Materiale per la consegna
 
@@ -70,8 +70,9 @@ Nella cartella exam_material sono presenti una relazione in formato .pdf nella c
 
 ##### Istanze di test
 
-1. Istanze di test per UFL/SSCFL sono nella cartella test_instances ,nel nome del file il primo numero rappresenta il numero di clienti dell'istanza,il secondo il numero di facility.
-2. Istanze di test metriche per UFL , sono state ottenuto modificando le istanze di test per UFL/SSCFL.Si trovano nella cartella metric_instances, il nome del file segue la stessa regola di cui al punto 1.
+1. Istanze di test per UFL sono nella cartella ufl_test_instances ,nel nome del file il primo numero rappresenta il numero di clienti dell'istanza,il secondo il numero di facility.
+2. Istanze di test per SSCFL sono nella cartella sscfl_test_instances ,nel nome del file il primo numero rappresenta il numero di facility dell'istanza,il secondo il numero di clienti.
+3. Istanze di test metriche per UFL , sono state ottenuto modificando le istanze di test per UFL/SSCFL.Si trovano nella cartella metric_instances, il nome del file segue la stessa regola di cui al punto 1.
 
 
 ###### Riferimenti
